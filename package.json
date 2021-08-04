@@ -45,7 +45,9 @@
     "release": "semantic-release",
     "ts-node": "node --loader ts-node/esm"
   },
-  "dependencies": {},
+  "dependencies": {
+    "pino": "^6.13.0"
+  },
   "peerDependencies": {},
   "devDependencies": {
     "@b2broker/tsconfig": "^1.0.3",
