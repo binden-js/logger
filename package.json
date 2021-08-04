@@ -1,25 +1,36 @@
 {
+  "name": "@kauai/logger",
+  "version": "1.0.0",
+  "description": "A simple logger (based on pino)",
+  "main": "build/index.js",
   "type": "module",
+  "types": "build/index.d.ts",
   "engines": {
-    "node": ">=16.5.0",
-    "npm": ">=7.19.1"
+    "node": ">=16.6.1",
+    "npm": ">=7.20.3"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/b2broker/logger.git"
   },
-  "keywords": [],
+  "keywords": [
+    "logger"
+  ],
+  "author": "Sergey Bakulin <sbakulin@b2broker.net>",
   "license": "AGPL-3.0-only",
-  "directories": {
-    "test": "test"
+  "bugs": {
+    "url": "https://github.com/b2broker/logger/issues"
+  },
+  "homepage": "https://github.com/b2broker/logger#readme",
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "npm run build:remove && tsc",
     "build:remove": "rm -rf ./build",
-    "ci:all": "npm ci && npm run commitlint:all && npm run prettier && npm run lint && npm run test:ci && npm run publish:test && npm run coverage:ci",
+    "ci:all": "npm ci && npm run commitlint:all && npm run prettier && npm run lint && npm run publish:test",
     "commitlint": "commitlint --verbose",
     "commitlint:all": "npm run commitlint -- --from=$( git rev-list --max-parents=0 $( git rev-parse --abbrev-ref HEAD ) )",
-    "coverage": "c8 --exclude 'build/test/' npm test && c8 report --reporter=lcov",
-    "coverage:ci": "npm run build && npm run coverage && npm run build:remove",
     "docs:build": "npm run docs:remove && typedoc && npm run prettier:write -- --ignore-path .prettierignore_docs",
     "docs:remove": "rm -rf ./docs",
     "install:clean": "rm -fr node_modules && rm -f package-lock.json && npm install",
@@ -32,10 +43,10 @@
     "prettier:write": "npm run prettier -- --write",
     "publish:test": "npm publish --dry-run",
     "release": "semantic-release",
-    "test": "mocha 'build/test/**/*.spec.js' --ui=tdd --full-trace --bail",
-    "test:ci": "npm run build && npm test && npm run build:remove",
     "ts-node": "node --loader ts-node/esm"
   },
+  "dependencies": {},
+  "peerDependencies": {},
   "devDependencies": {
     "@b2broker/tsconfig": "^1.0.3",
     "@semantic-release/changelog": "^5.0.1",
