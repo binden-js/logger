@@ -48,7 +48,9 @@
   "dependencies": {
     "pino": "^6.13.0"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@types/pino": "^6.3.11"
+  },
   "devDependencies": {
     "@b2broker/tsconfig": "^1.0.3",
     "@semantic-release/changelog": "^5.0.1",
