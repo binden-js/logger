@@ -1,5 +1,11 @@
 # Changelog
 
+### [1.0.1](https://github.com/b2broker/logger/compare/v1.0.0...v1.0.1) (2021-12-12)
+
+### Dependencies
+
+- upgrade `pino` to `v7.5.1` ([2d25c55](https://github.com/b2broker/logger/commit/2d25c55dd37c71f55998807cb29c055015ad56d5))
+
 ## 1.0.0 (2021-08-04)
 
 ### Features
