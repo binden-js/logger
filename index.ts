@@ -1,11 +1,16 @@
-import Pino from "pino";
+import Pino, {
+  stdSerializers,
+  Bindings,
+  Logger as PinoLogger,
+  LoggerOptions,
+} from "pino";
 
 const ENV_VARIABLE_NAME = "KAUAI_LOG_LEVEL";
 
 const serializers = {
-  error: Pino.stdSerializers.err,
-  request: Pino.stdSerializers.req,
-  response: Pino.stdSerializers.res,
+  error: stdSerializers.err,
+  request: stdSerializers.req,
+  response: stdSerializers.res,
 };
 
 const formatters = {
@@ -13,16 +18,16 @@ const formatters = {
 };
 
 export class Logger {
-  readonly #logger: Pino.Logger;
+  readonly #logger: PinoLogger;
 
   public constructor(
-    { level = Logger.getLevel(), ...options }: Pino.LoggerOptions = {},
+    { level = Logger.getLevel(), ...options }: LoggerOptions = {},
     logger = Pino({ level, formatters, serializers, ...options })
   ) {
     this.#logger = logger;
   }
 
-  public child(params: Pino.Bindings = {}): Logger {
+  public child(params: Bindings = {}): Logger {
     return new Logger({}, this.#logger.child(params));
   }
 
