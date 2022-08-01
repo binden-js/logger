@@ -60,6 +60,6 @@
     "prettier": "^2.5.1",
     "semantic-release": "^18.0.1",
     "ts-node": "^10.9.1",
-    "typedoc": "^0.22.10"
+    "typedoc": "^0.23.10"
   }
 }
