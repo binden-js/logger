@@ -16,7 +16,7 @@
   "keywords": [
     "logger"
   ],
-  "author": "Sergey Bakulin <sbakulin@b2broker.net>",
+  "author": "Sergey Bakulin <sergey.bakulin.github@gmail.com>",
   "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/b2broker/logger/issues"
