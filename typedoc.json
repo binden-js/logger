@@ -1,7 +1,7 @@
 {
   "out": "docs",
   "entryPoints": ["./index.ts"],
-  "name": "@kauai/logger",
+  "name": "@binden/logger",
   "exclude": "test/**/*",
   "hideGenerator": true,
   "gitRevision": "main"

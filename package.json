@@ -1,6 +1,6 @@
 {
-  "name": "@kauai/logger",
-  "version": "1.0.1",
+  "name": "@binden/logger",
+  "version": "1.0.0",
   "description": "A simple logger (based on pino)",
   "main": "dist/index.js",
   "type": "module",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/b2broker/logger.git"
+    "url": "git+https://github.com/binden-js/logger.git"
   },
   "keywords": [
     "logger"
@@ -19,9 +19,9 @@
   "author": "Sergey Bakulin <sergey.bakulin.github@gmail.com>",
   "license": "AGPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/b2broker/logger/issues"
+    "url": "https://github.com/binden-js/logger/issues"
   },
-  "homepage": "https://github.com/b2broker/logger#readme",
+  "homepage": "https://github.com/binden-js/logger#readme",
   "publishConfig": {
     "access": "public"
   },
