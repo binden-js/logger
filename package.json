@@ -43,7 +43,7 @@
     "publish:test": "npm publish --dry-run"
   },
   "dependencies": {
-    "pino": "^7.5.1"
+    "pino": "^8.4.0"
   },
   "devDependencies": {
     "@binden/commitlint-config": "^1.0.0",
