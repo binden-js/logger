@@ -13,16 +13,12 @@ const serializers = {
   response: stdSerializers.res,
 };
 
-const formatters = {
-  level: (label: string): { level: string } => ({ level: label }),
-};
-
 export class Logger {
   readonly #logger: PinoLogger;
 
   public constructor(
     { level = Logger.getLevel(), ...options }: LoggerOptions = {},
-    logger = Pino({ level, formatters, serializers, ...options })
+    logger = Pino({ level, serializers, ...options })
   ) {
     this.#logger = logger;
   }
