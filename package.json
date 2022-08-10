@@ -6,8 +6,8 @@
   "type": "module",
   "types": "dist/index.d.ts",
   "engines": {
-    "node": ">=16.6.1",
-    "npm": ">=7.20.3"
+    "node": ">=18.7.0",
+    "npm": ">=8.15.0"
   },
   "repository": {
     "type": "git",
