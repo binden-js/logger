@@ -2,29 +2,29 @@
 
 A simple logger (based on [`pino`](https://github.com/pinojs/pino)).
 
-By default, the logging level is equal to the value of the `KAUAI_LOG_LEVEL` environmental variable.
+By default, the logging level is equal to the value of the `BINDEN_LOG_LEVEL` environmental variable.
 
 ```bash
-KAUAI_LOG_LEVEL=trace
+BINDEN_LOG_LEVEL=trace
 ```
 
 ## Installation
 
 ```bash
-npm install @kauai/logger
+npm install @binden/logger
 ```
 
 ## Usage
 
 ```javascript
-import { Logger } from "@kauai/logger";
+import { Logger } from "@binden/logger";
 const logger = new Logger({ level: Logger.getLevel("OTHER_ENV_NAME") });
 ```
 
 or using the default import
 
 ```javascript
-import log from "@kauai/logger";
+import log from "@binden/logger";
 ```
 
 - `.fatal()`

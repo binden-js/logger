@@ -5,7 +5,15 @@ import Pino, {
   LoggerOptions,
 } from "pino";
 
-const ENV_VARIABLE_NAME = "KAUAI_LOG_LEVEL";
+const Levels = {
+  trace: 10,
+  debug: 20,
+  info: 30,
+  warn: 40,
+  error: 50,
+  fatal: 60,
+  silent: Infinity,
+};
 
 const serializers = {
   error: stdSerializers.err,
@@ -51,10 +59,17 @@ export class Logger {
     this.#logger.trace(extra, message);
   }
 
+  public static get ENV_VARIABLE_NAME(): string {
+    return "BINDEN_LOG_LEVEL";
+  }
+
   public static getLevel(
-    env_name = ENV_VARIABLE_NAME
-  ): Exclude<keyof Logger, "child"> | "silent" {
-    const { [env_name]: LEVEL } = process.env;
+    env_name = this.ENV_VARIABLE_NAME
+  ): keyof typeof Levels {
+    const {
+      env: { [env_name]: LEVEL },
+    } = process;
+
     const level = LEVEL?.trim().toLowerCase();
 
     switch (level) {
