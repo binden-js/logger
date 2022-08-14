@@ -1,11 +1,24 @@
-import Pino, {
+import pino, {
   stdSerializers,
   Bindings,
   Logger as PinoLogger,
-  LoggerOptions,
+  LoggerOptions as PinoLoggerOptions,
+  DestinationStream,
 } from "pino";
 
-const ENV_VARIABLE_NAME = "KAUAI_LOG_LEVEL";
+export interface LoggerOptions extends PinoLoggerOptions {
+  destination?: DestinationStream;
+  logger?: PinoLogger;
+}
+
+export type ILevel =
+  | "debug"
+  | "error"
+  | "fatal"
+  | "info"
+  | "silent"
+  | "trace"
+  | "warn";
 
 const serializers = {
   error: stdSerializers.err,
@@ -13,22 +26,17 @@ const serializers = {
   response: stdSerializers.res,
 };
 
-const formatters = {
-  level: (label: string): { level: string } => ({ level: label }),
-};
-
 export class Logger {
   readonly #logger: PinoLogger;
 
-  public constructor(
-    { level = Logger.getLevel(), ...options }: LoggerOptions = {},
-    logger = Pino({ level, formatters, serializers, ...options })
-  ) {
-    this.#logger = logger;
+  public constructor({ logger, destination, ...options }: LoggerOptions = {}) {
+    this.#logger = destination
+      ? pino({ serializers, ...options }, destination)
+      : logger ?? pino({ serializers, ...options });
   }
 
   public child(params: Bindings = {}): Logger {
-    return new Logger({}, this.#logger.child(params));
+    return new Logger({ logger: this.#logger.child(params) });
   }
 
   public fatal(message: string, extra: Record<string, unknown> = {}): void {
@@ -55,10 +63,15 @@ export class Logger {
     this.#logger.trace(extra, message);
   }
 
-  public static getLevel(
-    env_name = ENV_VARIABLE_NAME
-  ): Exclude<keyof Logger, "child"> | "silent" {
-    const { [env_name]: LEVEL } = process.env;
+  public static get ENV_VARIABLE_NAME(): string {
+    return "BINDEN_LOG_LEVEL";
+  }
+
+  public static getLevel(env_name = this.ENV_VARIABLE_NAME): ILevel {
+    const {
+      env: { [env_name]: LEVEL },
+    } = process;
+
     const level = LEVEL?.trim().toLowerCase();
 
     switch (level) {

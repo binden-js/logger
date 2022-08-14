@@ -1,30 +1,30 @@
-# @kauai/logger ![CI Status](https://github.com/b2broker/logger/workflows/CI/badge.svg) [![version](https://img.shields.io/github/package-json/v/b2broker/logger?style=plastic)](https://github.com/b2broker/logger) [![Known Vulnerabilities](https://snyk.io/test/github/b2broker/logger/badge.svg)](https://snyk.io/test/github/b2broker/logger) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) ![GitHub top language](https://img.shields.io/github/languages/top/b2broker/logger) ![node version](https://img.shields.io/node/v/@kauai/logger) ![npm downloads](https://img.shields.io/npm/dt/@kauai/logger) ![License](https://img.shields.io/github/license/b2broker/logger)
+# @binden/logger ![CI Status](https://github.com/binden-js/logger/workflows/CI/badge.svg) [![version](https://img.shields.io/github/package-json/v/binden-js/logger?style=plastic)](https://github.com/binden-js/logger) [![Known Vulnerabilities](https://snyk.io/test/github/binden-js/logger/badge.svg)](https://snyk.io/test/github/binden-js/logger) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) ![GitHub top language](https://img.shields.io/github/languages/top/binden-js/logger) ![node version](https://img.shields.io/node/v/@binden/logger) ![npm downloads](https://img.shields.io/npm/dt/@binden/logger) ![License](https://img.shields.io/github/license/binden-js/logger)
 
 A simple logger (based on [`pino`](https://github.com/pinojs/pino)).
 
-By default, the logging level is equal to the value of the `KAUAI_LOG_LEVEL` environmental variable.
+By default, the logging level is equal to the value of the `BINDEN_LOG_LEVEL` environmental variable.
 
 ```bash
-KAUAI_LOG_LEVEL=trace
+BINDEN_LOG_LEVEL=trace
 ```
 
 ## Installation
 
 ```bash
-npm install @kauai/logger
+npm install @binden/logger
 ```
 
 ## Usage
 
 ```javascript
-import { Logger } from "@kauai/logger";
+import { Logger } from "@binden/logger";
 const logger = new Logger({ level: Logger.getLevel("OTHER_ENV_NAME") });
 ```
 
 or using the default import
 
 ```javascript
-import log from "@kauai/logger";
+import log from "@binden/logger";
 ```
 
 - `.fatal()`
