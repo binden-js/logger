@@ -14,7 +14,7 @@
     "build:remove": "rm -rf ./dist",
     "ci:all": "npm ci && npm run prettier && npm run eslint && npm run commitlint && npm run docs:build && npm publish --dry-run",
     "commitlint": "commitlint --verbose --from=$( git rev-list --max-parents=0 $( git rev-parse --abbrev-ref HEAD ) )",
-    "docs:build": "rm -rf ./docs && typedoc && prettier -c -w ./docs",
+    "docs:build": "typedoc && prettier -c -w ./docs",
     "eslint": "eslint --ext .ts ./",
     "install:clean": "rm -rf node_modules && rm -f package-lock.json && npm install",
     "postpublish": "npm run build:remove",
