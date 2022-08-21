@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1](https://github.com/binden-js/logger/compare/v1.0.0...v1.0.1) (2022-08-21)
+
+### Dependencies
+
+- bump pino from 8.4.1 to 8.4.2 ([54a7d85](https://github.com/binden-js/logger/commit/54a7d85a4a83bb89391a23861e92c107f1e5ad26))
+
 ## 1.0.0 (2022-08-14)
 
 ### ⚠ BREAKING CHANGES
