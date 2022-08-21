@@ -4,21 +4,13 @@ import pino, {
   Logger as PinoLogger,
   LoggerOptions as PinoLoggerOptions,
   DestinationStream,
+  Level,
 } from "pino";
 
 export interface LoggerOptions extends PinoLoggerOptions {
   destination?: DestinationStream;
   logger?: PinoLogger;
 }
-
-export type ILevel =
-  | "debug"
-  | "error"
-  | "fatal"
-  | "info"
-  | "silent"
-  | "trace"
-  | "warn";
 
 const serializers = {
   error: stdSerializers.err,
@@ -31,8 +23,8 @@ export class Logger {
 
   public constructor({ logger, destination, ...options }: LoggerOptions = {}) {
     this.#logger = destination
-      ? pino({ serializers, ...options }, destination)
-      : logger ?? pino({ serializers, ...options });
+      ? pino({ level: Logger.getLevel(), serializers, ...options }, destination)
+      : logger ?? pino({ level: Logger.getLevel(), serializers, ...options });
   }
 
   public child(params: Bindings = {}): Logger {
@@ -67,7 +59,7 @@ export class Logger {
     return "BINDEN_LOG_LEVEL";
   }
 
-  public static getLevel(env_name = this.ENV_VARIABLE_NAME): ILevel {
+  public static getLevel(env_name = this.ENV_VARIABLE_NAME): Level | "silent" {
     const {
       env: { [env_name]: LEVEL },
     } = process;
@@ -88,4 +80,4 @@ export class Logger {
   }
 }
 
-export default new Logger({ level: Logger.getLevel() });
+export default new Logger();
