@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.2](https://github.com/binden-js/logger/compare/v1.0.1...v1.0.2) (2022-08-21)
+
+### Bug Fixes
+
+- set the default logging level to `BINDEN_LOG_LEVEL` value ([ecc3e22](https://github.com/binden-js/logger/commit/ecc3e22fea74c2959d85386cd9489f5d6f847cde))
+
+### Performance Improvements
+
+- remove the `ILevel` interface ([821f2dd](https://github.com/binden-js/logger/commit/821f2dd89b5565f7fc7ed4cd03a019cc57889eb2))
+
 ## [1.0.1](https://github.com/binden-js/logger/compare/v1.0.0...v1.0.1) (2022-08-21)
 
 ### Dependencies
