@@ -394,19 +394,6 @@
                       ><span>prettifier?</span></a
                     >
                     <a
-                      href="LoggerOptions.html#prettyPrint"
-                      class="tsd-index-link tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"
-                      ><svg
-                        class="tsd-kind-icon"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <use href="#icon-1024-path"></use>
-                        <use href="#icon-1024-text"></use></svg
-                      ><span>pretty<wbr />Print?</span></a
-                    >
-                    <a
                       href="LoggerOptions.html#redact"
                       class="tsd-index-link tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"
                       ><svg
@@ -529,12 +516,16 @@
               base<span class="tsd-signature-symbol">?:</span>
               <span class="tsd-signature-type">null</span
               ><span class="tsd-signature-symbol"> | </span
-              ><span class="tsd-signature-symbol">{ </span>[key:
-              <span class="tsd-signature-type">string</span>]<span
+              ><span class="tsd-signature-symbol">{ </span><br /><span
+                >    </span
+              >[key: <span class="tsd-signature-type">string</span>]<span
                 class="tsd-signature-symbol"
                 >: </span
               ><span class="tsd-signature-type">any</span
-              ><span class="tsd-signature-symbol"> }</span>
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                class="tsd-signature-symbol"
+                >}</span
+              >
             </div>
             <div class="tsd-comment tsd-typography">
               <p>
@@ -545,7 +536,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.base</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:561</li>
+                <li>Defined in node_modules/pino/pino.d.ts:564</li>
               </ul>
             </aside>
           </section>
@@ -573,27 +564,26 @@
             </h3>
             <div class="tsd-signature">
               browser<span class="tsd-signature-symbol">?:</span>
-              <span class="tsd-signature-symbol">{ </span>asObject<span
-                class="tsd-signature-symbol"
-                >?: </span
+              <span class="tsd-signature-symbol">{ </span><br /><span>    </span
+              >asObject<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">boolean</span
-              ><span class="tsd-signature-symbol">; </span>serialize<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >    </span
+              >serialize<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">boolean</span
               ><span class="tsd-signature-symbol"> | </span
               ><span class="tsd-signature-type">string</span
               ><span class="tsd-signature-symbol">[]</span
-              ><span class="tsd-signature-symbol">; </span>transmit<span
-                class="tsd-signature-symbol"
-                >?: </span
-              ><span class="tsd-signature-symbol">{ </span>level<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >    </span
+              >transmit<span class="tsd-signature-symbol">?: </span
+              ><span class="tsd-signature-symbol">{ </span><br /><span
+                >        </span
+              >level<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">string</span
-              ><span class="tsd-signature-symbol">; </span>send<span
-                class="tsd-signature-symbol"
-                >: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >        </span
+              >send<span class="tsd-signature-symbol">: </span
               ><span class="tsd-signature-symbol">(</span
               ><span class="tsd-signature-symbol">(</span>level<span
                 class="tsd-signature-symbol"
@@ -606,45 +596,55 @@
               ><span class="tsd-signature-symbol"> =&gt; </span
               ><span class="tsd-signature-type">void</span
               ><span class="tsd-signature-symbol">)</span
-              ><span class="tsd-signature-symbol"> }</span
-              ><span class="tsd-signature-symbol">; </span>write<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >    </span
+              ><span class="tsd-signature-symbol">}</span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >    </span
+              >write<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">WriteFn</span
               ><span class="tsd-signature-symbol"> | </span
-              ><span class="tsd-signature-symbol">{ </span>debug<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">{ </span><br /><span
+                >        </span
+              >debug<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">WriteFn</span
-              ><span class="tsd-signature-symbol">; </span>error<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >        </span
+              >error<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">WriteFn</span
-              ><span class="tsd-signature-symbol">; </span>fatal<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >        </span
+              >fatal<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">WriteFn</span
-              ><span class="tsd-signature-symbol">; </span>info<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >        </span
+              >info<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">WriteFn</span
-              ><span class="tsd-signature-symbol">; </span>trace<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >        </span
+              >trace<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">WriteFn</span
-              ><span class="tsd-signature-symbol">; </span>warn<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >        </span
+              >warn<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-type">WriteFn</span
-              ><span class="tsd-signature-symbol"> }</span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >    </span
+              ><span class="tsd-signature-symbol">}</span
               ><span class="tsd-signature-symbol"> &amp; </span
-              ><span class="tsd-signature-symbol">{ </span>[logLevel:
-              <span class="tsd-signature-type">string</span>]<span
+              ><span class="tsd-signature-symbol">{ </span><br /><span
+                >        </span
+              >[logLevel: <span class="tsd-signature-type">string</span>]<span
                 class="tsd-signature-symbol"
                 >: </span
               ><span class="tsd-signature-type">WriteFn</span
-              ><span class="tsd-signature-symbol"> }</span
-              ><span class="tsd-signature-symbol"> }</span>
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >    </span
+              ><span class="tsd-signature-symbol">}</span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                class="tsd-signature-symbol"
+                >}</span
+              >
             </div>
             <div class="tsd-comment tsd-typography">
               <p>
@@ -757,13 +757,13 @@
                   <h5>
                     <code class="tsd-tag ts-flagOptional">Optional</code>
                     transmit<span class="tsd-signature-symbol">?: </span
-                    ><span class="tsd-signature-symbol">{ </span>level<span
-                      class="tsd-signature-symbol"
-                      >?: </span
+                    ><span class="tsd-signature-symbol">{ </span><br /><span
+                      >    </span
+                    >level<span class="tsd-signature-symbol">?: </span
                     ><span class="tsd-signature-type">string</span
-                    ><span class="tsd-signature-symbol">; </span>send<span
-                      class="tsd-signature-symbol"
-                      >: </span
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      >    </span
+                    >send<span class="tsd-signature-symbol">: </span
                     ><span class="tsd-signature-symbol">(</span
                     ><span class="tsd-signature-symbol">(</span>level<span
                       class="tsd-signature-symbol"
@@ -775,7 +775,10 @@
                     ><span class="tsd-signature-symbol"> =&gt; </span
                     ><span class="tsd-signature-type">void</span
                     ><span class="tsd-signature-symbol">)</span
-                    ><span class="tsd-signature-symbol"> }</span>
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      class="tsd-signature-symbol"
+                      >}</span
+                    >
                   </h5>
                   <div class="tsd-comment tsd-typography">
                     <p>Options for transmission of logs.</p>
@@ -892,38 +895,45 @@
                     write<span class="tsd-signature-symbol">?: </span
                     ><span class="tsd-signature-type">WriteFn</span
                     ><span class="tsd-signature-symbol"> | </span
-                    ><span class="tsd-signature-symbol">{ </span>debug<span
-                      class="tsd-signature-symbol"
-                      >?: </span
+                    ><span class="tsd-signature-symbol">{ </span><br /><span
+                      >    </span
+                    >debug<span class="tsd-signature-symbol">?: </span
                     ><span class="tsd-signature-type">WriteFn</span
-                    ><span class="tsd-signature-symbol">; </span>error<span
-                      class="tsd-signature-symbol"
-                      >?: </span
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      >    </span
+                    >error<span class="tsd-signature-symbol">?: </span
                     ><span class="tsd-signature-type">WriteFn</span
-                    ><span class="tsd-signature-symbol">; </span>fatal<span
-                      class="tsd-signature-symbol"
-                      >?: </span
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      >    </span
+                    >fatal<span class="tsd-signature-symbol">?: </span
                     ><span class="tsd-signature-type">WriteFn</span
-                    ><span class="tsd-signature-symbol">; </span>info<span
-                      class="tsd-signature-symbol"
-                      >?: </span
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      >    </span
+                    >info<span class="tsd-signature-symbol">?: </span
                     ><span class="tsd-signature-type">WriteFn</span
-                    ><span class="tsd-signature-symbol">; </span>trace<span
-                      class="tsd-signature-symbol"
-                      >?: </span
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      >    </span
+                    >trace<span class="tsd-signature-symbol">?: </span
                     ><span class="tsd-signature-type">WriteFn</span
-                    ><span class="tsd-signature-symbol">; </span>warn<span
-                      class="tsd-signature-symbol"
-                      >?: </span
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      >    </span
+                    >warn<span class="tsd-signature-symbol">?: </span
                     ><span class="tsd-signature-type">WriteFn</span
-                    ><span class="tsd-signature-symbol"> }</span
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      class="tsd-signature-symbol"
+                      >}</span
                     ><span class="tsd-signature-symbol"> &amp; </span
-                    ><span class="tsd-signature-symbol">{ </span>[logLevel:
+                    ><span class="tsd-signature-symbol">{ </span><br /><span
+                      >    </span
+                    >[logLevel:
                     <span class="tsd-signature-type">string</span>]<span
                       class="tsd-signature-symbol"
                       >: </span
                     ><span class="tsd-signature-type">WriteFn</span
-                    ><span class="tsd-signature-symbol"> }</span>
+                    ><span class="tsd-signature-symbol">; </span><br /><span
+                      class="tsd-signature-symbol"
+                      >}</span
+                    >
                   </h5>
                   <div class="tsd-comment tsd-typography">
                     <p>
@@ -952,7 +962,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.browser</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:413</li>
+                <li>Defined in node_modules/pino/pino.d.ts:416</li>
               </ul>
             </aside>
           </section>
@@ -983,12 +993,15 @@
             </h3>
             <div class="tsd-signature">
               custom<wbr />Levels<span class="tsd-signature-symbol">?:</span>
-              <span class="tsd-signature-symbol">{ </span>[key:
-              <span class="tsd-signature-type">string</span>]<span
+              <span class="tsd-signature-symbol">{ </span><br /><span>    </span
+              >[key: <span class="tsd-signature-type">string</span>]<span
                 class="tsd-signature-symbol"
                 >: </span
               ><span class="tsd-signature-type">number</span
-              ><span class="tsd-signature-symbol"> }</span>
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                class="tsd-signature-symbol"
+                >}</span
+              >
             </div>
             <div class="tsd-comment tsd-typography">
               <p>
@@ -1013,7 +1026,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.customLevels</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:345</li>
+                <li>Defined in node_modules/pino/pino.d.ts:353</li>
               </ul>
             </aside>
           </section>
@@ -1055,7 +1068,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.depthLimit</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:609</li>
+                <li>Defined in node_modules/pino/pino.d.ts:612</li>
               </ul>
             </aside>
           </section>
@@ -1139,7 +1152,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.edgeLimit</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:614</li>
+                <li>Defined in node_modules/pino/pino.d.ts:617</li>
               </ul>
             </aside>
           </section>
@@ -1175,7 +1188,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.enabled</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:409</li>
+                <li>Defined in node_modules/pino/pino.d.ts:412</li>
               </ul>
             </aside>
           </section>
@@ -1217,7 +1230,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.errorKey</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:392</li>
+                <li>Defined in node_modules/pino/pino.d.ts:400</li>
               </ul>
             </aside>
           </section>
@@ -1248,9 +1261,8 @@
             </h3>
             <div class="tsd-signature">
               formatters<span class="tsd-signature-symbol">?:</span>
-              <span class="tsd-signature-symbol">{ </span>bindings<span
-                class="tsd-signature-symbol"
-                >?: </span
+              <span class="tsd-signature-symbol">{ </span><br /><span>    </span
+              >bindings<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-symbol">(</span
               ><span class="tsd-signature-symbol">(</span>bindings<span
                 class="tsd-signature-symbol"
@@ -1260,9 +1272,9 @@
               ><span class="tsd-signature-symbol"> =&gt; </span
               ><span class="tsd-signature-type">object</span
               ><span class="tsd-signature-symbol">)</span
-              ><span class="tsd-signature-symbol">; </span>level<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >    </span
+              >level<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-symbol">(</span
               ><span class="tsd-signature-symbol">(</span>label<span
                 class="tsd-signature-symbol"
@@ -1275,9 +1287,9 @@
               ><span class="tsd-signature-symbol"> =&gt; </span
               ><span class="tsd-signature-type">object</span
               ><span class="tsd-signature-symbol">)</span
-              ><span class="tsd-signature-symbol">; </span>log<span
-                class="tsd-signature-symbol"
-                >?: </span
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                >    </span
+              >log<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-symbol">(</span
               ><span class="tsd-signature-symbol">(</span>object<span
                 class="tsd-signature-symbol"
@@ -1297,7 +1309,10 @@
               ><span class="tsd-signature-type">unknown</span
               ><span class="tsd-signature-symbol">&gt;</span
               ><span class="tsd-signature-symbol">)</span
-              ><span class="tsd-signature-symbol"> }</span>
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                class="tsd-signature-symbol"
+                >}</span
+              >
             </div>
             <div class="tsd-comment tsd-typography">
               <p>
@@ -1544,7 +1559,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.formatters</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:569</li>
+                <li>Defined in node_modules/pino/pino.d.ts:572</li>
               </ul>
             </aside>
           </section>
@@ -1572,9 +1587,8 @@
             </h3>
             <div class="tsd-signature">
               hooks<span class="tsd-signature-symbol">?:</span>
-              <span class="tsd-signature-symbol">{ </span>logMethod<span
-                class="tsd-signature-symbol"
-                >?: </span
+              <span class="tsd-signature-symbol">{ </span><br /><span>    </span
+              >logMethod<span class="tsd-signature-symbol">?: </span
               ><span class="tsd-signature-symbol">(</span
               ><span class="tsd-signature-symbol">(</span>this<span
                 class="tsd-signature-symbol"
@@ -1606,7 +1620,10 @@
               ><span class="tsd-signature-symbol"> =&gt; </span
               ><span class="tsd-signature-type">void</span
               ><span class="tsd-signature-symbol">)</span
-              ><span class="tsd-signature-symbol"> }</span>
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                class="tsd-signature-symbol"
+                >}</span
+              >
             </div>
             <div class="tsd-comment tsd-typography">
               <p>
@@ -1760,7 +1777,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.hooks</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:596</li>
+                <li>Defined in node_modules/pino/pino.d.ts:599</li>
               </ul>
             </aside>
           </section>
@@ -1801,7 +1818,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.level</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:339</li>
+                <li>Defined in node_modules/pino/pino.d.ts:347</li>
               </ul>
             </aside>
           </section>
@@ -1843,7 +1860,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.levelVal</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:384</li>
+                <li>Defined in node_modules/pino/pino.d.ts:392</li>
               </ul>
             </aside>
           </section>
@@ -1926,7 +1943,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.messageKey</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:388</li>
+                <li>Defined in node_modules/pino/pino.d.ts:396</li>
               </ul>
             </aside>
           </section>
@@ -1967,7 +1984,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.mixin</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:358</li>
+                <li>Defined in node_modules/pino/pino.d.ts:366</li>
               </ul>
             </aside>
           </section>
@@ -2015,7 +2032,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.mixinMergeStrategy</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:366</li>
+                <li>Defined in node_modules/pino/pino.d.ts:374</li>
               </ul>
             </aside>
           </section>
@@ -2051,7 +2068,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.name</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:321</li>
+                <li>Defined in node_modules/pino/pino.d.ts:329</li>
               </ul>
             </aside>
           </section>
@@ -2090,7 +2107,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.nestedKey</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:396</li>
+                <li>Defined in node_modules/pino/pino.d.ts:404</li>
               </ul>
             </aside>
           </section>
@@ -2129,7 +2146,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.onChild</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:619</li>
+                <li>Defined in node_modules/pino/pino.d.ts:622</li>
               </ul>
             </aside>
           </section>
@@ -2168,55 +2185,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.prettifier</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:405</li>
-              </ul>
-            </aside>
-          </section>
-          <section
-            class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"
-          >
-            <a id="prettyPrint" class="tsd-anchor"></a>
-            <h3 class="tsd-anchor-link">
-              <code class="tsd-tag ts-flagOptional">Optional</code>
-              <span>pretty<wbr />Print</span
-              ><a
-                href="#prettyPrint"
-                aria-label="Permalink"
-                class="tsd-anchor-icon"
-                ><svg
-                  class="icon icon-tabler icon-tabler-link"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <use href="#icon-anchor-a"></use>
-                  <use href="#icon-anchor-b"></use>
-                  <use href="#icon-anchor-c"></use></svg
-              ></a>
-            </h3>
-            <div class="tsd-signature">
-              pretty<wbr />Print<span class="tsd-signature-symbol">?:</span>
-              <span class="tsd-signature-type">boolean</span
-              ><span class="tsd-signature-symbol"> | </span
-              ><span class="tsd-signature-type">PrettyOptions</span>
-            </div>
-            <div class="tsd-comment tsd-typography">
-              <p>
-                Enables pino.pretty. This is intended for non-production
-                configurations. This may be set to a configuration object as
-                outlined in
-                <a href="http://getpino.io/#/docs/API?id=pretty"
-                  >http://getpino.io/#/docs/API?id=pretty</a
-                >. Default: <code>false</code>.
-              </p>
-            </div>
-            <aside class="tsd-sources">
-              <p>Inherited from PinoLoggerOptions.prettyPrint</p>
-              <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:401</li>
+                <li>Defined in node_modules/pino/pino.d.ts:408</li>
               </ul>
             </aside>
           </section>
@@ -2265,7 +2234,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.redact</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:379</li>
+                <li>Defined in node_modules/pino/pino.d.ts:387</li>
               </ul>
             </aside>
           </section>
@@ -2304,7 +2273,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.safe</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:317</li>
+                <li>Defined in node_modules/pino/pino.d.ts:325</li>
               </ul>
             </aside>
           </section>
@@ -2335,12 +2304,15 @@
             </h3>
             <div class="tsd-signature">
               serializers<span class="tsd-signature-symbol">?:</span>
-              <span class="tsd-signature-symbol">{ </span>[key:
-              <span class="tsd-signature-type">string</span>]<span
+              <span class="tsd-signature-symbol">{ </span><br /><span>    </span
+              >[key: <span class="tsd-signature-type">string</span>]<span
                 class="tsd-signature-symbol"
                 >: </span
               ><span class="tsd-signature-type">SerializerFn</span
-              ><span class="tsd-signature-symbol"> }</span>
+              ><span class="tsd-signature-symbol">; </span><br /><span
+                class="tsd-signature-symbol"
+                >}</span
+              >
             </div>
             <div class="tsd-comment tsd-typography">
               <p>
@@ -2367,7 +2339,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.serializers</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:327</li>
+                <li>Defined in node_modules/pino/pino.d.ts:335</li>
               </ul>
             </aside>
           </section>
@@ -2417,7 +2389,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.timestamp</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:334</li>
+                <li>Defined in node_modules/pino/pino.d.ts:342</li>
               </ul>
             </aside>
           </section>
@@ -2481,7 +2453,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.transport</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:313</li>
+                <li>Defined in node_modules/pino/pino.d.ts:321</li>
               </ul>
             </aside>
           </section>
@@ -2530,7 +2502,7 @@
             <aside class="tsd-sources">
               <p>Inherited from PinoLoggerOptions.useOnlyCustomLevels</p>
               <ul>
-                <li>Defined in node_modules/pino/pino.d.ts:351</li>
+                <li>Defined in node_modules/pino/pino.d.ts:359</li>
               </ul>
             </aside>
           </section>
@@ -3050,23 +3022,6 @@
                       <use href="#icon-1024-path"></use>
                       <use href="#icon-1024-text"></use></svg
                     >prettifier?</a
-                  >
-                </li>
-                <li
-                  class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-external"
-                >
-                  <a
-                    href="LoggerOptions.html#prettyPrint"
-                    class="tsd-index-link"
-                    ><svg
-                      class="tsd-kind-icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <use href="#icon-1024-path"></use>
-                      <use href="#icon-1024-text"></use></svg
-                    >pretty<wbr />Print?</a
                   >
                 </li>
                 <li
