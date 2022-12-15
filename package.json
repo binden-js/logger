@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/binden-js/logger#readme",
   "dependencies": {
-    "pino": "^8.7.0"
+    "pino": "^8.8.0"
   },
   "devDependencies": {
     "@binden/commitlint-config": "^1.0.1",
