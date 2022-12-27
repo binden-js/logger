@@ -1805,8 +1805,8 @@
   };
   var ue = (t, e = 100) => {
     let n;
-    return (...r) => {
-      clearTimeout(n), (n = setTimeout(() => t(r), e));
+    return () => {
+      clearTimeout(n), (n = setTimeout(() => t(), e));
     };
   };
   var me = De(de());
