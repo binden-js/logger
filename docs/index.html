@@ -146,7 +146,7 @@
             <code>BINDEN_LOG_LEVEL</code> environmental variable.
           </p>
           <p>sdf</p>
-          <pre><code class="language-bash"><span class="hl-0">BINDEN_LOG_LEVEL=trace</span>
+          <pre><code class="language-bash"><span class="hl-0">BINDEN_LOG_LEVEL</span><span class="hl-1">=</span><span class="hl-2">trace</span>
 </code></pre>
 
           <a
@@ -156,7 +156,7 @@
           >
             <h2>Installation</h2>
           </a>
-          <pre><code class="language-bash"><span class="hl-0">npm install @binden/logger</span>
+          <pre><code class="language-bash"><span class="hl-1">npm </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-2">@binden/logger</span>
 </code></pre>
 
           <a
@@ -166,40 +166,40 @@
           >
             <h2>Usage</h2>
           </a>
-          <pre><code class="language-javascript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">Logger</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;@binden/logger&quot;</span><span class="hl-0">;</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">logger</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">Logger</span><span class="hl-0">({ </span><span class="hl-2">level:</span><span class="hl-0"> </span><span class="hl-2">Logger</span><span class="hl-0">.</span><span class="hl-6">getLevel</span><span class="hl-0">(</span><span class="hl-3">&quot;OTHER_ENV_NAME&quot;</span><span class="hl-0">) });</span>
+          <pre><code class="language-javascript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-0">Logger</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@binden/logger&quot;</span><span class="hl-1">;</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">logger</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Logger</span><span class="hl-1">({ </span><span class="hl-0">level:</span><span class="hl-1"> </span><span class="hl-0">Logger</span><span class="hl-1">.</span><span class="hl-6">getLevel</span><span class="hl-1">(</span><span class="hl-2">&quot;OTHER_ENV_NAME&quot;</span><span class="hl-1">) });</span>
 </code></pre>
           <p>or using the default import</p>
-          <pre><code class="language-javascript"><span class="hl-1">import</span><span class="hl-0"> </span><span class="hl-2">log</span><span class="hl-0"> </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;@binden/logger&quot;</span><span class="hl-0">;</span>
+          <pre><code class="language-javascript"><span class="hl-3">import</span><span class="hl-1"> </span><span class="hl-0">log</span><span class="hl-1"> </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@binden/logger&quot;</span><span class="hl-1">;</span>
 </code></pre>
           <ul>
             <li><code>.fatal()</code></li>
           </ul>
-          <pre><code class="language-javascript"><span class="hl-2">log</span><span class="hl-0">.</span><span class="hl-6">fatal</span><span class="hl-0">(</span><span class="hl-3">&quot;Bad error. Exiting...&quot;</span><span class="hl-0">, { </span><span class="hl-2">id:</span><span class="hl-0"> </span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-2">someinfo:</span><span class="hl-0"> { </span><span class="hl-2">a:</span><span class="hl-0"> </span><span class="hl-7">2</span><span class="hl-0"> } });</span>
+          <pre><code class="language-javascript"><span class="hl-0">log</span><span class="hl-1">.</span><span class="hl-6">fatal</span><span class="hl-1">(</span><span class="hl-2">&quot;Bad error. Exiting...&quot;</span><span class="hl-1">, { </span><span class="hl-0">id:</span><span class="hl-1"> </span><span class="hl-7">1</span><span class="hl-1">, </span><span class="hl-0">someinfo:</span><span class="hl-1"> { </span><span class="hl-0">a:</span><span class="hl-1"> </span><span class="hl-7">2</span><span class="hl-1"> } });</span>
 </code></pre>
           <ul>
             <li><code>.error()</code></li>
           </ul>
-          <pre><code class="language-javascript"><span class="hl-1">try</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-6">doSomething</span><span class="hl-0">();</span><br/><span class="hl-0">} </span><span class="hl-1">catch</span><span class="hl-0"> (</span><span class="hl-2">error</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-2">log</span><span class="hl-0">.</span><span class="hl-6">error</span><span class="hl-0">(</span><span class="hl-3">&quot;Something bad happened in the `doSomething`&quot;</span><span class="hl-0">, { </span><span class="hl-2">error</span><span class="hl-0"> });</span><br/><span class="hl-0">}</span>
+          <pre><code class="language-javascript"><span class="hl-3">try</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-6">doSomething</span><span class="hl-1">();</span><br/><span class="hl-1">} </span><span class="hl-3">catch</span><span class="hl-1"> (</span><span class="hl-0">error</span><span class="hl-1">) {</span><br/><span class="hl-1">  </span><span class="hl-0">log</span><span class="hl-1">.</span><span class="hl-6">error</span><span class="hl-1">(</span><span class="hl-2">&quot;Something bad happened in the `doSomething`&quot;</span><span class="hl-1">, { </span><span class="hl-0">error</span><span class="hl-1"> });</span><br/><span class="hl-1">}</span>
 </code></pre>
           <ul>
             <li><code>.warn()</code></li>
           </ul>
-          <pre><code class="language-javascript"><span class="hl-1">if</span><span class="hl-0"> (</span><span class="hl-2">connection</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-6">workWithConnection</span><span class="hl-0">();</span><br/><span class="hl-0">} </span><span class="hl-1">else</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-2">log</span><span class="hl-0">.</span><span class="hl-6">warn</span><span class="hl-0">(</span><span class="hl-3">&quot;The connection has not been established&quot;</span><span class="hl-0">, { </span><span class="hl-2">reason</span><span class="hl-0"> });</span><br/><span class="hl-0">}</span>
+          <pre><code class="language-javascript"><span class="hl-3">if</span><span class="hl-1"> (</span><span class="hl-0">connection</span><span class="hl-1">) {</span><br/><span class="hl-1">  </span><span class="hl-6">workWithConnection</span><span class="hl-1">();</span><br/><span class="hl-1">} </span><span class="hl-3">else</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">log</span><span class="hl-1">.</span><span class="hl-6">warn</span><span class="hl-1">(</span><span class="hl-2">&quot;The connection has not been established&quot;</span><span class="hl-1">, { </span><span class="hl-0">reason</span><span class="hl-1"> });</span><br/><span class="hl-1">}</span>
 </code></pre>
           <ul>
             <li><code>.info()</code></li>
           </ul>
-          <pre><code class="language-javascript"><span class="hl-2">server</span><span class="hl-0">.</span><span class="hl-6">on</span><span class="hl-0">(</span><span class="hl-3">&quot;listening&quot;</span><span class="hl-0">, (</span><span class="hl-2">port</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-2">log</span><span class="hl-0">.</span><span class="hl-6">info</span><span class="hl-0">(</span><span class="hl-3">`The server is listening`</span><span class="hl-0">, { </span><span class="hl-2">port</span><span class="hl-0"> });</span><br/><span class="hl-0">});</span>
+          <pre><code class="language-javascript"><span class="hl-0">server</span><span class="hl-1">.</span><span class="hl-6">on</span><span class="hl-1">(</span><span class="hl-2">&quot;listening&quot;</span><span class="hl-1">, (</span><span class="hl-0">port</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">log</span><span class="hl-1">.</span><span class="hl-6">info</span><span class="hl-1">(</span><span class="hl-2">`The server is listening`</span><span class="hl-1">, { </span><span class="hl-0">port</span><span class="hl-1"> });</span><br/><span class="hl-1">});</span>
 </code></pre>
           <ul>
             <li><code>.debug()</code></li>
           </ul>
-          <pre><code class="language-javascript"><span class="hl-2">websocket</span><span class="hl-0">.</span><span class="hl-6">on</span><span class="hl-0">(</span><span class="hl-3">&quot;message&quot;</span><span class="hl-0">, (</span><span class="hl-2">message</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-2">log</span><span class="hl-0">.</span><span class="hl-6">debug</span><span class="hl-0">(</span><span class="hl-3">&quot;Received a message&quot;</span><span class="hl-0">, { </span><span class="hl-2">message</span><span class="hl-0"> });</span><br/><span class="hl-0">});</span>
+          <pre><code class="language-javascript"><span class="hl-0">websocket</span><span class="hl-1">.</span><span class="hl-6">on</span><span class="hl-1">(</span><span class="hl-2">&quot;message&quot;</span><span class="hl-1">, (</span><span class="hl-0">message</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">log</span><span class="hl-1">.</span><span class="hl-6">debug</span><span class="hl-1">(</span><span class="hl-2">&quot;Received a message&quot;</span><span class="hl-1">, { </span><span class="hl-0">message</span><span class="hl-1"> });</span><br/><span class="hl-1">});</span>
 </code></pre>
           <ul>
             <li><code>.trace()</code></li>
           </ul>
-          <pre><code class="language-javascript"><span class="hl-2">log</span><span class="hl-0">.</span><span class="hl-6">trace</span><span class="hl-0">(</span><span class="hl-3">&quot;Array length&quot;</span><span class="hl-0">, { </span><span class="hl-2">length:</span><span class="hl-0"> </span><span class="hl-2">arr</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0"> });</span>
+          <pre><code class="language-javascript"><span class="hl-0">log</span><span class="hl-1">.</span><span class="hl-6">trace</span><span class="hl-1">(</span><span class="hl-2">&quot;Array length&quot;</span><span class="hl-1">, { </span><span class="hl-0">length:</span><span class="hl-1"> </span><span class="hl-0">arr</span><span class="hl-1">.</span><span class="hl-0">length</span><span class="hl-1"> });</span>
 </code></pre>
         </div>
       </div>

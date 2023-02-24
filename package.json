@@ -1,6 +1,6 @@
 {
   "name": "@binden/logger",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple logger (based on pino)",
   "main": "dist/index.js",
   "type": "module",
