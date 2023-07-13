@@ -4,7 +4,7 @@ import pino, {
   Logger as PinoLogger,
   LoggerOptions as PinoLoggerOptions,
   DestinationStream,
-  Level,
+  LevelWithSilent,
 } from "pino";
 
 export interface LoggerOptions extends PinoLoggerOptions {
@@ -59,7 +59,7 @@ export class Logger {
     return "BINDEN_LOG_LEVEL";
   }
 
-  public static getLevel(env_name = this.ENV_VARIABLE_NAME): Level | "silent" {
+  public static getLevel(env_name = this.ENV_VARIABLE_NAME): LevelWithSilent {
     const {
       env: { [env_name]: LEVEL },
     } = process;
