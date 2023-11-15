@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.11](https://github.com/binden-js/logger/compare/v1.0.10...v1.0.11) (2023-11-15)
+
+### Dependencies
+
+- bump pino from 8.15.1 to 8.16.1 ([8208eb1](https://github.com/binden-js/logger/commit/8208eb193b38605e31441dff3fdb0ef8e54c6c74))
+
 ## [1.0.10](https://github.com/binden-js/logger/compare/v1.0.9...v1.0.10) (2023-09-08)
 
 ### Dependencies
