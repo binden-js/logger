@@ -56,6 +56,349 @@
           </ul>
           <h1>Interface LoggerOptions</h1>
         </div>
+        <div class="tsd-signature">
+          <span class="tsd-signature-keyword">interface </span
+          ><span class="tsd-kind-interface">LoggerOptions </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#base">base</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">null</span
+          ><span class="tsd-signature-symbol"> | </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span
+            >        </span
+          >[<span class="tsd-kind-index-signature">key</span>:
+          <span class="tsd-signature-type">string</span>]<span
+            class="tsd-signature-symbol"
+            >: </span
+          ><span class="tsd-signature-type">any</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><span class="tsd-signature-symbol">}</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#browser"
+            >browser</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">asObject</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">boolean</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">disabled</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">boolean</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">serialize</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">boolean</span
+          ><span class="tsd-signature-symbol"> | </span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">[]</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">transmit</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span
+            >            </span
+          ><span class="tsd-kind-property">level</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">LevelOrString</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >            </span
+          ><span class="tsd-kind-property">send</span
+          ><span class="tsd-signature-symbol">: </span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-kind-parameter">level</span>,
+          <span class="tsd-kind-parameter">logEvent</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol"> =&gt; </span
+          ><span class="tsd-signature-type">void</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-signature-symbol">}</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">write</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">WriteFn</span
+          ><span class="tsd-signature-symbol"> | </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span
+            >            </span
+          ><span class="tsd-kind-property">debug</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">WriteFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >            </span
+          ><span class="tsd-kind-property">error</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">WriteFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >            </span
+          ><span class="tsd-kind-property">fatal</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">WriteFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >            </span
+          ><span class="tsd-kind-property">info</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">WriteFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >            </span
+          ><span class="tsd-kind-property">trace</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">WriteFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >            </span
+          ><span class="tsd-kind-property">warn</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">WriteFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-signature-symbol">}</span
+          ><span class="tsd-signature-symbol"> &amp; </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span
+            >            </span
+          >[<span class="tsd-kind-index-signature">logLevel</span>:
+          <span class="tsd-signature-type">string</span>]<span
+            class="tsd-signature-symbol"
+            >: </span
+          ><span class="tsd-signature-type">WriteFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-signature-symbol">}</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><span class="tsd-signature-symbol">}</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#crlf">crlf</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">boolean</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#customLevels"
+            >customLevels</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">{}</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#depthLimit"
+            >depthLimit</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">number</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#destination"
+            >destination</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">DestinationStream</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#edgeLimit"
+            >edgeLimit</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">number</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#enabled"
+            >enabled</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">boolean</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#errorKey"
+            >errorKey</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#formatters"
+            >formatters</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">bindings</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-kind-parameter">bindings</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol"> =&gt; </span
+          ><span class="tsd-signature-type">object</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">level</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-kind-parameter">label</span>,
+          <span class="tsd-kind-parameter">number</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol"> =&gt; </span
+          ><span class="tsd-signature-type">object</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">log</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-kind-parameter">object</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol"> =&gt; </span
+          ><span class="tsd-signature-type">Record</span
+          ><span class="tsd-signature-symbol">&lt;</span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">, </span
+          ><span class="tsd-signature-type">unknown</span
+          ><span class="tsd-signature-symbol">&gt;</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><span class="tsd-signature-symbol">}</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#hooks">hooks</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span
+            >        </span
+          ><span class="tsd-kind-property">logMethod</span
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-signature-symbol">(</span
+          ><span class="tsd-kind-parameter">this</span>,
+          <span class="tsd-kind-parameter">args</span>,
+          <span class="tsd-kind-parameter">method</span>,
+          <span class="tsd-kind-parameter">level</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol"> =&gt; </span
+          ><span class="tsd-signature-type">void</span
+          ><span class="tsd-signature-symbol">)</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><span class="tsd-signature-symbol">}</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#level-2"
+            >level</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">LevelWithSilentOrString</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#levelVal"
+            >levelVal</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">number</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#logger"
+            >logger</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">Logger</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#messageKey"
+            >messageKey</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#mixin">mixin</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">MixinFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a
+            class="tsd-kind-property"
+            href="LoggerOptions.html#mixinMergeStrategy"
+            >mixinMergeStrategy</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">MixinMergeStrategyFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#msgPrefix"
+            >msgPrefix</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#name">name</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#nestedKey"
+            >nestedKey</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#onChild"
+            >onChild</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">OnChildCallback</span
+          ><span class="tsd-signature-symbol">&lt;</span
+          ><span class="tsd-signature-type">never</span
+          ><span class="tsd-signature-symbol">&gt;</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#redact"
+            >redact</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">[]</span
+          ><span class="tsd-signature-symbol"> | </span
+          ><span class="tsd-signature-type">redactOptions</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#safe">safe</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">boolean</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#serializers"
+            >serializers</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-symbol">{ </span><br /><span
+            >        </span
+          >[<span class="tsd-kind-index-signature">key</span>:
+          <span class="tsd-signature-type">string</span>]<span
+            class="tsd-signature-symbol"
+            >: </span
+          ><span class="tsd-signature-type">SerializerFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><span class="tsd-signature-symbol">}</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#timestamp"
+            >timestamp</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">boolean</span
+          ><span class="tsd-signature-symbol"> | </span
+          ><span class="tsd-signature-type">TimeFn</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a class="tsd-kind-property" href="LoggerOptions.html#transport"
+            >transport</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">TransportSingleOptions</span
+          ><span class="tsd-signature-symbol">&lt;</span
+          ><span class="tsd-signature-type">Record</span
+          ><span class="tsd-signature-symbol">&lt;</span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">, </span
+          ><span class="tsd-signature-type">any</span
+          ><span class="tsd-signature-symbol">&gt;</span
+          ><span class="tsd-signature-symbol">&gt;</span
+          ><span class="tsd-signature-symbol"> | </span
+          ><span class="tsd-signature-type">TransportMultiOptions</span
+          ><span class="tsd-signature-symbol">&lt;</span
+          ><span class="tsd-signature-type">Record</span
+          ><span class="tsd-signature-symbol">&lt;</span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">, </span
+          ><span class="tsd-signature-type">any</span
+          ><span class="tsd-signature-symbol">&gt;</span
+          ><span class="tsd-signature-symbol">&gt;</span
+          ><span class="tsd-signature-symbol"> | </span
+          ><span class="tsd-signature-type">TransportPipelineOptions</span
+          ><span class="tsd-signature-symbol">&lt;</span
+          ><span class="tsd-signature-type">Record</span
+          ><span class="tsd-signature-symbol">&lt;</span
+          ><span class="tsd-signature-type">string</span
+          ><span class="tsd-signature-symbol">, </span
+          ><span class="tsd-signature-type">any</span
+          ><span class="tsd-signature-symbol">&gt;</span
+          ><span class="tsd-signature-symbol">&gt;</span
+          ><span class="tsd-signature-symbol">; </span><br /><span>    </span
+          ><a
+            class="tsd-kind-property"
+            href="LoggerOptions.html#useOnlyCustomLevels"
+            >useOnlyCustomLevels</a
+          ><span class="tsd-signature-symbol">?: </span
+          ><span class="tsd-signature-type">boolean</span
+          ><span class="tsd-signature-symbol">; </span><br /><span
+            class="tsd-signature-symbol"
+            >}</span
+          >
+        </div>
         <section class="tsd-panel tsd-hierarchy">
           <h4>Hierarchy</h4>
           <ul class="tsd-hierarchy">
@@ -840,16 +1183,7 @@
             <div class="tsd-signature">
               <span class="tsd-kind-property">custom<wbr />Levels</span
               ><span class="tsd-signature-symbol">?:</span>
-              <span class="tsd-signature-symbol">{ </span><br /><span>    </span
-              >[<span class="tsd-kind-index-signature">key</span>:
-              <span class="tsd-signature-type">string</span>]<span
-                class="tsd-signature-symbol"
-                >: </span
-              ><span class="tsd-signature-type">number</span
-              ><span class="tsd-signature-symbol">; </span><br /><span
-                class="tsd-signature-symbol"
-                >}</span
-              >
+              <span class="tsd-signature-symbol">{}</span>
             </div>
             <div class="tsd-comment tsd-typography">
               <p>
@@ -860,17 +1194,7 @@
             </div>
             <div class="tsd-type-declaration">
               <h4>Type declaration</h4>
-              <ul class="tsd-parameters">
-                <li class="tsd-parameter-index-signature">
-                  <h5>
-                    <span class="tsd-signature-symbol">[</span
-                    ><span class="tsd-kind-parameter">key</span>:
-                    <span class="tsd-signature-type">string</span
-                    ><span class="tsd-signature-symbol">]: </span
-                    ><span class="tsd-signature-type">number</span>
-                  </h5>
-                </li>
-              </ul>
+              <ul class="tsd-parameters"></ul>
             </div>
             <div class="tsd-comment tsd-typography"></div>
             <aside class="tsd-sources">
@@ -1421,8 +1745,7 @@
                                   <span class="tsd-kind-parameter">this</span>:
                                   <span class="tsd-signature-type">Logger</span
                                   ><span class="tsd-signature-symbol">&lt;</span
-                                  ><span class="tsd-signature-type"
-                                    >LoggerOptions</span
+                                  ><span class="tsd-signature-type">never</span
                                   ><span class="tsd-signature-symbol"
                                     >&gt;</span
                                   >
@@ -1778,7 +2101,7 @@
               ><span class="tsd-signature-symbol">?:</span>
               <span class="tsd-signature-type">OnChildCallback</span
               ><span class="tsd-signature-symbol">&lt;</span
-              ><span class="tsd-signature-type">LoggerOptions</span
+              ><span class="tsd-signature-type">never</span
               ><span class="tsd-signature-symbol">&gt;</span>
             </div>
             <div class="tsd-comment tsd-typography">
