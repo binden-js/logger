@@ -50,7 +50,7 @@
   "devDependencies": {
     "@binden/commitlint-config": "^2.0.0",
     "@binden/semantic-release-config": "^3.0.0",
-    "@binden/tsconfig": "^1.0.3",
+    "@binden/tsconfig": "^2.0.0",
     "eslint-config-binden-ts": "^3.0.0",
     "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
