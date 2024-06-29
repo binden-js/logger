@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.2](https://github.com/binden-js/logger/compare/v2.0.1...v2.0.2) (2024-06-29)
+
+### Bug Fixes
+
+- update `eslint` ([a928b0b](https://github.com/binden-js/logger/commit/a928b0b9ebf6c30dd4b78e8a6dc590beacec30a9))
+
 ## [2.0.1](https://github.com/binden-js/logger/compare/v2.0.0...v2.0.1) (2024-06-17)
 
 ### Dependencies
