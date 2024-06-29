@@ -4,8 +4,6 @@ A simple logger (based on [`pino`](https://github.com/pinojs/pino)).
 
 By default, the logging level is equal to the value of the `BINDEN_LOG_LEVEL` environmental variable.
 
-sdf
-
 ```bash
 BINDEN_LOG_LEVEL=trace
 ```

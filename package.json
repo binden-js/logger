@@ -15,7 +15,7 @@
     "ci:all": "npm ci && npm run prettier && npm run eslint && npm run commitlint && npm run docs:build && npm publish --dry-run",
     "commitlint": "commitlint --verbose --from=$( git rev-list --max-parents=0 $( git rev-parse --abbrev-ref HEAD ) )",
     "docs:build": "typedoc",
-    "eslint": "eslint --ext .ts ./",
+    "eslint": "eslint **/*.ts",
     "install:clean": "npm install",
     "postbuild": "prettier -c -w ./dist",
     "postdocs:build": "prettier -c -w ./docs",
