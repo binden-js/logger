@@ -7,7 +7,7 @@ window.translations = {
 };
 ("use strict");
 (() => {
-  var Ce = Object.create;
+  var Pe = Object.create;
   var ie = Object.defineProperty;
   var Oe = Object.getOwnPropertyDescriptor;
   var _e = Object.getOwnPropertyNames;
@@ -28,7 +28,7 @@ window.translations = {
     return t;
   };
   var Ae = (t, e, n) => (
-    (n = t != null ? Ce(Re(t)) : {}),
+    (n = t != null ? Pe(Re(t)) : {}),
     De(
       e || !t || !t.__esModule
         ? ie(n, "default", { value: t, enumerable: !0 })
@@ -435,11 +435,11 @@ window.translations = {
           V =
             /^(.+?)(al|ance|ence|er|ic|able|ible|ant|ement|ment|ent|ou|ism|ate|iti|ous|ive|ize)$/,
           $ = /^(.+?)(s|t)(ion)$/,
-          P = /^(.+?)e$/,
+          C = /^(.+?)e$/,
           z = /ll$/,
           W = new RegExp("^" + s + i + "[^aeiouwxy]$"),
-          N = function (c) {
-            var v, C, T, h, x, O, M;
+          H = function (c) {
+            var v, P, T, h, x, O, M;
             if (c.length < 3) return c;
             if (
               ((T = c.substr(0, 1)),
@@ -476,11 +476,11 @@ window.translations = {
             }
             if (((h = j), h.test(c))) {
               var E = h.exec(c);
-              (v = E[1]), (C = E[2]), (h = m), h.test(v) && (c = v + e[C]);
+              (v = E[1]), (P = E[2]), (h = m), h.test(v) && (c = v + e[P]);
             }
             if (((h = q), h.test(c))) {
               var E = h.exec(c);
-              (v = E[1]), (C = E[2]), (h = m), h.test(v) && (c = v + n[C]);
+              (v = E[1]), (P = E[2]), (h = m), h.test(v) && (c = v + n[P]);
             }
             if (((h = V), (x = $), h.test(c))) {
               var E = h.exec(c);
@@ -489,7 +489,7 @@ window.translations = {
               var E = x.exec(c);
               (v = E[1] + E[2]), (x = p), x.test(v) && (c = v);
             }
-            if (((h = P), h.test(c))) {
+            if (((h = C), h.test(c))) {
               var E = h.exec(c);
               (v = E[1]),
                 (h = p),
@@ -506,7 +506,7 @@ window.translations = {
             );
           };
         return function (R) {
-          return R.update(N);
+          return R.update(H);
         };
       })()),
         t.Pipeline.registerFunction(t.stemmer, "stemmer");
@@ -934,18 +934,18 @@ window.translations = {
                     continue;
                   }
                   if (
-                    (i[y].upsert(_, u.boost, function (Ie, Pe) {
-                      return Ie + Pe;
+                    (i[y].upsert(_, u.boost, function (Ie, Ce) {
+                      return Ie + Ce;
                     }),
                     !s[j])
                   ) {
                     for (var V = 0; V < A.length; V++) {
                       var $ = A[V],
-                        P = new t.FieldRef($, y),
+                        C = new t.FieldRef($, y),
                         z = B[$],
                         W;
-                      (W = r[P]) === void 0
-                        ? (r[P] = new t.MatchData(w, y, z))
+                      (W = r[C]) === void 0
+                        ? (r[C] = new t.MatchData(w, y, z))
                         : W.add(w, y, z);
                     }
                     s[j] = !0;
@@ -959,36 +959,36 @@ window.translations = {
               }
           }
           for (
-            var N = t.Set.complete, R = t.Set.empty, l = 0;
+            var H = t.Set.complete, R = t.Set.empty, l = 0;
             l < this.fields.length;
             l++
           ) {
             var y = this.fields[l];
-            o[y] && (N = N.intersect(o[y])), a[y] && (R = R.union(a[y]));
+            o[y] && (H = H.intersect(o[y])), a[y] && (R = R.union(a[y]));
           }
           var c = Object.keys(r),
             v = [],
-            C = Object.create(null);
+            P = Object.create(null);
           if (n.isNegated()) {
             c = Object.keys(this.fieldVectors);
             for (var l = 0; l < c.length; l++) {
-              var P = c[l],
-                T = t.FieldRef.fromString(P);
-              r[P] = new t.MatchData();
+              var C = c[l],
+                T = t.FieldRef.fromString(C);
+              r[C] = new t.MatchData();
             }
           }
           for (var l = 0; l < c.length; l++) {
             var T = t.FieldRef.fromString(c[l]),
               h = T.docRef;
-            if (N.contains(h) && !R.contains(h)) {
+            if (H.contains(h) && !R.contains(h)) {
               var x = this.fieldVectors[T],
                 O = i[T.fieldName].similarity(x),
                 M;
-              if ((M = C[h]) !== void 0)
+              if ((M = P[h]) !== void 0)
                 (M.score += O), M.matchData.combine(r[T]);
               else {
                 var E = { ref: h, score: O, matchData: r[T] };
-                (C[h] = E), v.push(E);
+                (P[h] = E), v.push(E);
               }
             }
           }
@@ -1694,11 +1694,12 @@ window.translations = {
         n = e?.parentElement;
       for (; n && !n.classList.contains(".tsd-navigation"); )
         n instanceof HTMLDetailsElement && (n.open = !0), (n = n.parentElement);
-      if (e && !e.checkVisibility()) {
+      if (e && !Ve(e)) {
         let r =
           e.getBoundingClientRect().top -
           document.documentElement.clientHeight / 4;
-        document.querySelector(".site-menu").scrollTop = r;
+        (document.querySelector(".site-menu").scrollTop = r),
+          (document.querySelector(".col-sidebar").scrollTop = r);
       }
     }
     updateIndexVisibility() {
@@ -1762,6 +1763,11 @@ window.translations = {
       });
     }
   };
+  function Ve(t) {
+    let e = t.getBoundingClientRect(),
+      n = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(e.bottom < 0 || e.top - n >= 0);
+  }
   var oe = (t, e = 100) => {
     let n;
     return () => {
@@ -1805,9 +1811,9 @@ window.translations = {
       te(t);
     }),
       r.addEventListener("focus", () => t.classList.add("has-focus")),
-      Ve(t, i, r, e);
+      He(t, i, r, e);
   }
-  function Ve(t, e, n, r) {
+  function He(t, e, n, r) {
     n.addEventListener(
       "input",
       oe(() => {
@@ -1816,7 +1822,7 @@ window.translations = {
     ),
       n.addEventListener("keydown", (i) => {
         i.key == "Enter"
-          ? He(e, t)
+          ? Be(e, t)
           : i.key == "ArrowUp"
             ? (de(e, n, -1), i.preventDefault())
             : i.key === "ArrowDown" && (de(e, n, 1), i.preventDefault());
@@ -1906,7 +1912,7 @@ window.translations = {
         : n === -1 && (r.classList.remove("current"), e.focus());
     }
   }
-  function He(t, e) {
+  function Be(t, e) {
     let n = t.querySelector(".current");
     if ((n || (n = t.querySelector("li:first-child")), n)) {
       let r = n.querySelector("a");
@@ -1929,7 +1935,7 @@ window.translations = {
         (o = n.indexOf(r, s));
     return i.push(ee(t.substring(s))), i.join("");
   }
-  var Be = {
+  var je = {
     "&": "&amp;",
     "<": "&lt;",
     ">": "&gt;",
@@ -1937,7 +1943,7 @@ window.translations = {
     '"': "&quot;",
   };
   function ee(t) {
-    return t.replace(/[&<>"'"]/g, (e) => Be[e]);
+    return t.replace(/[&<>"'"]/g, (e) => je[e]);
   }
   var I = class {
     constructor(e) {
@@ -1946,11 +1952,11 @@ window.translations = {
   };
   var F = "mousedown",
     ye = "mousemove",
-    H = "mouseup",
+    N = "mouseup",
     J = { x: 0, y: 0 },
     me = !1,
     ne = !1,
-    je = !1,
+    qe = !1,
     D = !1,
     ve = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent,
@@ -1958,7 +1964,7 @@ window.translations = {
   document.documentElement.classList.add(ve ? "is-mobile" : "not-mobile");
   ve &&
     "ontouchstart" in document.documentElement &&
-    ((je = !0), (F = "touchstart"), (ye = "touchmove"), (H = "touchend"));
+    ((qe = !0), (F = "touchstart"), (ye = "touchmove"), (N = "touchend"));
   document.addEventListener(F, (t) => {
     (ne = !0), (D = !1);
     let e = F == "touchstart" ? t.targetTouches[0] : t;
@@ -1972,7 +1978,7 @@ window.translations = {
       D = Math.sqrt(n * n + r * r) > 10;
     }
   });
-  document.addEventListener(H, () => {
+  document.addEventListener(N, () => {
     ne = !1;
   });
   document.addEventListener("click", (t) => {
@@ -1982,10 +1988,10 @@ window.translations = {
     constructor(e) {
       super(e),
         (this.className = this.el.dataset.toggle || ""),
-        this.el.addEventListener(H, (n) => this.onPointerUp(n)),
+        this.el.addEventListener(N, (n) => this.onPointerUp(n)),
         this.el.addEventListener("click", (n) => n.preventDefault()),
         document.addEventListener(F, (n) => this.onDocumentPointerDown(n)),
-        document.addEventListener(H, (n) => this.onDocumentPointerUp(n));
+        document.addEventListener(N, (n) => this.onDocumentPointerUp(n));
     }
     setActive(e) {
       if (this.active == e) return;
@@ -2133,7 +2139,9 @@ window.translations = {
       let r = e.appendChild(document.createElement("a"));
       (r.href = K + t.path),
         n && (r.className = n),
-        location.pathname === r.pathname && r.classList.add("current"),
+        location.pathname === r.pathname &&
+          !r.href.includes("#") &&
+          r.classList.add("current"),
         t.kind &&
           (r.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="tsd-kind-icon"><use href="#icon-${t.kind}"></use></svg>`),
         (r.appendChild(document.createElement("span")).textContent = t.text);
@@ -2144,8 +2152,8 @@ window.translations = {
   G(Y, ".tsd-filter-item input[type=checkbox]");
   var Te = document.getElementById("tsd-theme");
   Te && Ee(Te);
-  var qe = new U();
-  Object.defineProperty(window, "app", { value: qe });
+  var $e = new U();
+  Object.defineProperty(window, "app", { value: $e });
   fe();
   we();
 })();

@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.3](https://github.com/binden-js/logger/compare/v2.0.2...v2.0.3) (2024-12-07)
+
+### Dependencies
+
+- bump pino from 9.2.0 to 9.5.0 ([66a42b5](https://github.com/binden-js/logger/commit/66a42b5000ad61f2bd5cb8b49fdb7dcf2a3dccc6))
+
 ## [2.0.2](https://github.com/binden-js/logger/compare/v2.0.1...v2.0.2) (2024-06-29)
 
 ### Bug Fixes

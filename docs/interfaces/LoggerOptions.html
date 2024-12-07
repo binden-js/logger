@@ -334,6 +334,8 @@
           ><span class="tsd-signature-type">Logger</span
           ><span class="tsd-signature-symbol">&lt;</span
           ><span class="tsd-signature-type">never</span
+          ><span class="tsd-signature-symbol">, </span
+          ><span class="tsd-signature-type">boolean</span
           ><span class="tsd-signature-symbol">&gt;</span>,
           <span class="tsd-kind-parameter">args</span
           ><span class="tsd-signature-symbol">: </span
@@ -805,7 +807,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.base</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:588</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:596</li>
                 </ul>
               </aside>
             </section>
@@ -976,7 +978,10 @@
               <div class="tsd-comment tsd-typography">
                 <p>
                   Browser only, see
-                  <a href="http://getpino.io/#/docs/browser"
+                  <a
+                    href="http://getpino.io/#/docs/browser"
+                    target="_blank"
+                    class="external"
                     >http://getpino.io/#/docs/browser</a
                   >.
                 </p>
@@ -1000,19 +1005,21 @@
                       </p>
                     </div>
                     <div class="tsd-comment tsd-typography">
-                      <h4 class="tsd-anchor-link">
-                        <a id="Example" class="tsd-anchor"></a>Example<a
-                          href="#Example"
-                          aria-label="Permalink"
-                          class="tsd-anchor-icon"
-                          ><svg viewBox="0 0 24 24">
-                            <use
-                              href="../assets/icons.svg#icon-anchor"
-                            ></use></svg
-                        ></a>
-                      </h4>
-                      <pre><code class="ts"><span class="hl-0">pino</span><span class="hl-1">.</span><span class="hl-3">info</span><span class="hl-1">(</span><span class="hl-2">&#39;hi&#39;</span><span class="hl-1">) </span><span class="hl-8">// creates and logs {msg: &#39;hi&#39;, level: 30, time: &lt;ts&gt;}</span>
+                      <div class="tsd-tag-Example">
+                        <h4 class="tsd-anchor-link">
+                          <a id="Example" class="tsd-anchor"></a>Example<a
+                            href="#Example"
+                            aria-label="Permalink"
+                            class="tsd-anchor-icon"
+                            ><svg viewBox="0 0 24 24">
+                              <use
+                                href="../assets/icons.svg#icon-anchor"
+                              ></use></svg
+                          ></a>
+                        </h4>
+                        <pre><code class="ts"><span class="hl-0">pino</span><span class="hl-1">.</span><span class="hl-3">info</span><span class="hl-1">(</span><span class="hl-2">&#39;hi&#39;</span><span class="hl-1">) </span><span class="hl-8">// creates and logs {msg: &#39;hi&#39;, level: 30, time: &lt;ts&gt;}</span>
 </code><button type="button">Copy</button></pre>
+                      </div>
                     </div>
                   </li>
                   <li class="tsd-parameter">
@@ -1029,19 +1036,21 @@
                       </p>
                     </div>
                     <div class="tsd-comment tsd-typography">
-                      <h4 class="tsd-anchor-link">
-                        <a id="Example-1" class="tsd-anchor"></a>Example<a
-                          href="#Example-1"
-                          aria-label="Permalink"
-                          class="tsd-anchor-icon"
-                          ><svg viewBox="0 0 24 24">
-                            <use
-                              href="../assets/icons.svg#icon-anchor"
-                            ></use></svg
-                        ></a>
-                      </h4>
-                      <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><span class="hl-0">browser:</span><span class="hl-1"> {</span><span class="hl-0">disabled:</span><span class="hl-1"> </span><span class="hl-5">true</span><span class="hl-1">}})</span>
+                      <div class="tsd-tag-Example">
+                        <h4 class="tsd-anchor-link">
+                          <a id="Example-1" class="tsd-anchor"></a>Example<a
+                            href="#Example-1"
+                            aria-label="Permalink"
+                            class="tsd-anchor-icon"
+                            ><svg viewBox="0 0 24 24">
+                              <use
+                                href="../assets/icons.svg#icon-anchor"
+                              ></use></svg
+                          ></a>
+                        </h4>
+                        <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><span class="hl-0">browser:</span><span class="hl-1"> {</span><span class="hl-0">disabled:</span><span class="hl-1"> </span><span class="hl-5">true</span><span class="hl-1">}})</span>
 </code><button type="button">Copy</button></pre>
+                      </div>
                     </div>
                   </li>
                   <li class="tsd-parameter">
@@ -1327,47 +1336,51 @@
                       </p>
                     </div>
                     <div class="tsd-comment tsd-typography">
-                      <h4 class="tsd-anchor-link">
-                        <a id="Example-2" class="tsd-anchor"></a>Example<a
-                          href="#Example-2"
-                          aria-label="Permalink"
-                          class="tsd-anchor-icon"
-                          ><svg viewBox="0 0 24 24">
-                            <use
-                              href="../assets/icons.svg#icon-anchor"
-                            ></use></svg
-                        ></a>
-                      </h4>
-                      <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">serialize:</span><span class="hl-1"> </span><span class="hl-5">true</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
+                      <div class="tsd-tag-Example">
+                        <h4 class="tsd-anchor-link">
+                          <a id="Example-2" class="tsd-anchor"></a>Example<a
+                            href="#Example-2"
+                            aria-label="Permalink"
+                            class="tsd-anchor-icon"
+                            ><svg viewBox="0 0 24 24">
+                              <use
+                                href="../assets/icons.svg#icon-anchor"
+                              ></use></svg
+                          ></a>
+                        </h4>
+                        <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">serialize:</span><span class="hl-1"> </span><span class="hl-5">true</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
 </code><button type="button">Copy</button></pre>
-
-                      <h4 class="tsd-anchor-link">
-                        <a id="Example-3" class="tsd-anchor"></a>Example<a
-                          href="#Example-3"
-                          aria-label="Permalink"
-                          class="tsd-anchor-icon"
-                          ><svg viewBox="0 0 24 24">
-                            <use
-                              href="../assets/icons.svg#icon-anchor"
-                            ></use></svg
-                        ></a>
-                      </h4>
-                      <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">serializers:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">custom:</span><span class="hl-1"> </span><span class="hl-0">myCustomSerializer</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">another:</span><span class="hl-1"> </span><span class="hl-0">anotherSerializer</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">serialize:</span><span class="hl-1"> [</span><span class="hl-2">&#39;custom&#39;</span><span class="hl-1">]</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span><br/><span class="hl-8">// following will apply myCustomSerializer to the custom property,</span><br/><span class="hl-8">// but will not apply anotherSerializer to another key</span><br/><span class="hl-0">pino</span><span class="hl-1">.</span><span class="hl-3">info</span><span class="hl-1">({</span><span class="hl-0">custom:</span><span class="hl-1"> </span><span class="hl-2">&#39;a&#39;</span><span class="hl-1">, </span><span class="hl-0">another:</span><span class="hl-1"> </span><span class="hl-2">&#39;b&#39;</span><span class="hl-1">})</span>
+                      </div>
+                      <div class="tsd-tag-Example">
+                        <h4 class="tsd-anchor-link">
+                          <a id="Example-3" class="tsd-anchor"></a>Example<a
+                            href="#Example-3"
+                            aria-label="Permalink"
+                            class="tsd-anchor-icon"
+                            ><svg viewBox="0 0 24 24">
+                              <use
+                                href="../assets/icons.svg#icon-anchor"
+                              ></use></svg
+                          ></a>
+                        </h4>
+                        <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">serializers:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">custom:</span><span class="hl-1"> </span><span class="hl-0">myCustomSerializer</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">another:</span><span class="hl-1"> </span><span class="hl-0">anotherSerializer</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">serialize:</span><span class="hl-1"> [</span><span class="hl-2">&#39;custom&#39;</span><span class="hl-1">]</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span><br/><span class="hl-8">// following will apply myCustomSerializer to the custom property,</span><br/><span class="hl-8">// but will not apply anotherSerializer to another key</span><br/><span class="hl-0">pino</span><span class="hl-1">.</span><span class="hl-3">info</span><span class="hl-1">({</span><span class="hl-0">custom:</span><span class="hl-1"> </span><span class="hl-2">&#39;a&#39;</span><span class="hl-1">, </span><span class="hl-0">another:</span><span class="hl-1"> </span><span class="hl-2">&#39;b&#39;</span><span class="hl-1">})</span>
 </code><button type="button">Copy</button></pre>
-
-                      <h4 class="tsd-anchor-link">
-                        <a id="Example-4" class="tsd-anchor"></a>Example<a
-                          href="#Example-4"
-                          aria-label="Permalink"
-                          class="tsd-anchor-icon"
-                          ><svg viewBox="0 0 24 24">
-                            <use
-                              href="../assets/icons.svg#icon-anchor"
-                            ></use></svg
-                        ></a>
-                      </h4>
-                      <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">serializers:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">custom:</span><span class="hl-1"> </span><span class="hl-0">myCustomSerializer</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">another:</span><span class="hl-1"> </span><span class="hl-0">anotherSerializer</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">serialize:</span><span class="hl-1"> [</span><span class="hl-2">&#39;!stdSerializers.err&#39;</span><span class="hl-1">, </span><span class="hl-2">&#39;custom&#39;</span><span class="hl-1">] </span><span class="hl-8">//will not serialize Errors, will serialize `custom` keys</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
+                      </div>
+                      <div class="tsd-tag-Example">
+                        <h4 class="tsd-anchor-link">
+                          <a id="Example-4" class="tsd-anchor"></a>Example<a
+                            href="#Example-4"
+                            aria-label="Permalink"
+                            class="tsd-anchor-icon"
+                            ><svg viewBox="0 0 24 24">
+                              <use
+                                href="../assets/icons.svg#icon-anchor"
+                              ></use></svg
+                          ></a>
+                        </h4>
+                        <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">serializers:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">custom:</span><span class="hl-1"> </span><span class="hl-0">myCustomSerializer</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-0">another:</span><span class="hl-1"> </span><span class="hl-0">anotherSerializer</span><br/><span class="hl-1">  },</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">serialize:</span><span class="hl-1"> [</span><span class="hl-2">&#39;!stdSerializers.err&#39;</span><span class="hl-1">, </span><span class="hl-2">&#39;custom&#39;</span><span class="hl-1">] </span><span class="hl-8">//will not serialize Errors, will serialize `custom` keys</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
 </code><button type="button">Copy</button></pre>
+                      </div>
                     </div>
                   </li>
                   <li class="tsd-parameter">
@@ -1405,19 +1418,21 @@
                       <p>Options for transmission of logs.</p>
                     </div>
                     <div class="tsd-comment tsd-typography">
-                      <h4 class="tsd-anchor-link">
-                        <a id="Example-5" class="tsd-anchor"></a>Example<a
-                          href="#Example-5"
-                          aria-label="Permalink"
-                          class="tsd-anchor-icon"
-                          ><svg viewBox="0 0 24 24">
-                            <use
-                              href="../assets/icons.svg#icon-anchor"
-                            ></use></svg
-                        ></a>
-                      </h4>
-                      <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">transmit:</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-0">level:</span><span class="hl-1"> </span><span class="hl-2">&#39;warn&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-3">send</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-5">function</span><span class="hl-1"> (</span><span class="hl-0">level</span><span class="hl-1">, </span><span class="hl-0">logEvent</span><span class="hl-1">) {</span><br/><span class="hl-1">        </span><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-0">level</span><span class="hl-1"> === </span><span class="hl-2">&#39;warn&#39;</span><span class="hl-1">) {</span><br/><span class="hl-1">          </span><span class="hl-8">// maybe send the logEvent to a separate endpoint</span><br/><span class="hl-1">          </span><span class="hl-8">// or maybe analyse the messages further before sending</span><br/><span class="hl-1">        }</span><br/><span class="hl-1">        </span><span class="hl-8">// we could also use the `logEvent.level.value` property to determine</span><br/><span class="hl-1">        </span><span class="hl-8">// numerical value</span><br/><span class="hl-1">        </span><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-0">logEvent</span><span class="hl-1">.</span><span class="hl-0">level</span><span class="hl-1">.</span><span class="hl-0">value</span><span class="hl-1"> &gt;= </span><span class="hl-7">50</span><span class="hl-1">) { </span><span class="hl-8">// covers error and fatal</span><br/><br/><span class="hl-1">          </span><span class="hl-8">// send the logEvent somewhere</span><br/><span class="hl-1">        }</span><br/><span class="hl-1">      }</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
+                      <div class="tsd-tag-Example">
+                        <h4 class="tsd-anchor-link">
+                          <a id="Example-5" class="tsd-anchor"></a>Example<a
+                            href="#Example-5"
+                            aria-label="Permalink"
+                            class="tsd-anchor-icon"
+                            ><svg viewBox="0 0 24 24">
+                              <use
+                                href="../assets/icons.svg#icon-anchor"
+                              ></use></svg
+                          ></a>
+                        </h4>
+                        <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">transmit:</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-0">level:</span><span class="hl-1"> </span><span class="hl-2">&#39;warn&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-3">send</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-5">function</span><span class="hl-1"> (</span><span class="hl-0">level</span><span class="hl-1">, </span><span class="hl-0">logEvent</span><span class="hl-1">) {</span><br/><span class="hl-1">        </span><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-0">level</span><span class="hl-1"> === </span><span class="hl-2">&#39;warn&#39;</span><span class="hl-1">) {</span><br/><span class="hl-1">          </span><span class="hl-8">// maybe send the logEvent to a separate endpoint</span><br/><span class="hl-1">          </span><span class="hl-8">// or maybe analyse the messages further before sending</span><br/><span class="hl-1">        }</span><br/><span class="hl-1">        </span><span class="hl-8">// we could also use the `logEvent.level.value` property to determine</span><br/><span class="hl-1">        </span><span class="hl-8">// numerical value</span><br/><span class="hl-1">        </span><span class="hl-4">if</span><span class="hl-1"> (</span><span class="hl-0">logEvent</span><span class="hl-1">.</span><span class="hl-0">level</span><span class="hl-1">.</span><span class="hl-0">value</span><span class="hl-1"> &gt;= </span><span class="hl-7">50</span><span class="hl-1">) { </span><span class="hl-8">// covers error and fatal</span><br/><br/><span class="hl-1">          </span><span class="hl-8">// send the logEvent somewhere</span><br/><span class="hl-1">        }</span><br/><span class="hl-1">      }</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
 </code><button type="button">Copy</button></pre>
+                      </div>
                     </div>
                     <ul class="tsd-parameters">
                       <li class="tsd-parameter">
@@ -1461,19 +1476,21 @@
                           <p>Remotely record log messages.</p>
                         </div>
                         <div class="tsd-comment tsd-typography">
-                          <h4 class="tsd-anchor-link">
-                            <a id="Description" class="tsd-anchor"></a
-                            >Description<a
-                              href="#Description"
-                              aria-label="Permalink"
-                              class="tsd-anchor-icon"
-                              ><svg viewBox="0 0 24 24">
-                                <use
-                                  href="../assets/icons.svg#icon-anchor"
-                                ></use></svg
-                            ></a>
-                          </h4>
-                          <p>Called after writing the log message.</p>
+                          <div class="tsd-tag-Description">
+                            <h4 class="tsd-anchor-link">
+                              <a id="Description" class="tsd-anchor"></a
+                              >Description<a
+                                href="#Description"
+                                aria-label="Permalink"
+                                class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24">
+                                  <use
+                                    href="../assets/icons.svg#icon-anchor"
+                                  ></use></svg
+                              ></a>
+                            </h4>
+                            <p>Called after writing the log message.</p>
+                          </div>
                         </div>
                         <ul class="tsd-parameters">
                           <li class="tsd-parameter-signature">
@@ -1595,33 +1612,36 @@
                       </p>
                     </div>
                     <div class="tsd-comment tsd-typography">
-                      <h4 class="tsd-anchor-link">
-                        <a id="Example-6" class="tsd-anchor"></a>Example<a
-                          href="#Example-6"
-                          aria-label="Permalink"
-                          class="tsd-anchor-icon"
-                          ><svg viewBox="0 0 24 24">
-                            <use
-                              href="../assets/icons.svg#icon-anchor"
-                            ></use></svg
-                        ></a>
-                      </h4>
-                      <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">write</span><span class="hl-0">:</span><span class="hl-1"> (</span><span class="hl-0">o</span><span class="hl-1">) </span><span class="hl-5">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-8">// do something with o</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
+                      <div class="tsd-tag-Example">
+                        <h4 class="tsd-anchor-link">
+                          <a id="Example-6" class="tsd-anchor"></a>Example<a
+                            href="#Example-6"
+                            aria-label="Permalink"
+                            class="tsd-anchor-icon"
+                            ><svg viewBox="0 0 24 24">
+                              <use
+                                href="../assets/icons.svg#icon-anchor"
+                              ></use></svg
+                          ></a>
+                        </h4>
+                        <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">write</span><span class="hl-0">:</span><span class="hl-1"> (</span><span class="hl-0">o</span><span class="hl-1">) </span><span class="hl-5">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-8">// do something with o</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
 </code><button type="button">Copy</button></pre>
-
-                      <h4 class="tsd-anchor-link">
-                        <a id="Example-7" class="tsd-anchor"></a>Example<a
-                          href="#Example-7"
-                          aria-label="Permalink"
-                          class="tsd-anchor-icon"
-                          ><svg viewBox="0 0 24 24">
-                            <use
-                              href="../assets/icons.svg#icon-anchor"
-                            ></use></svg
-                        ></a>
-                      </h4>
-                      <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">write:</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-3">info</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-5">function</span><span class="hl-1"> (</span><span class="hl-0">o</span><span class="hl-1">) {</span><br/><span class="hl-1">        </span><span class="hl-8">//process info log object</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      </span><span class="hl-3">error</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-5">function</span><span class="hl-1"> (</span><span class="hl-0">o</span><span class="hl-1">) {</span><br/><span class="hl-1">        </span><span class="hl-8">//process error log object</span><br/><span class="hl-1">      }</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
+                      </div>
+                      <div class="tsd-tag-Example">
+                        <h4 class="tsd-anchor-link">
+                          <a id="Example-7" class="tsd-anchor"></a>Example<a
+                            href="#Example-7"
+                            aria-label="Permalink"
+                            class="tsd-anchor-icon"
+                            ><svg viewBox="0 0 24 24">
+                              <use
+                                href="../assets/icons.svg#icon-anchor"
+                              ></use></svg
+                          ></a>
+                        </h4>
+                        <pre><code class="ts"><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-6">pino</span><span class="hl-1"> = </span><span class="hl-3">require</span><span class="hl-1">(</span><span class="hl-2">&#39;pino&#39;</span><span class="hl-1">)({</span><br/><span class="hl-1">  </span><span class="hl-0">browser:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">write:</span><span class="hl-1"> {</span><br/><span class="hl-1">      </span><span class="hl-3">info</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-5">function</span><span class="hl-1"> (</span><span class="hl-0">o</span><span class="hl-1">) {</span><br/><span class="hl-1">        </span><span class="hl-8">//process info log object</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      </span><span class="hl-3">error</span><span class="hl-0">:</span><span class="hl-1"> </span><span class="hl-5">function</span><span class="hl-1"> (</span><span class="hl-0">o</span><span class="hl-1">) {</span><br/><span class="hl-1">        </span><span class="hl-8">//process error log object</span><br/><span class="hl-1">      }</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">})</span>
 </code><button type="button">Copy</button></pre>
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -1630,7 +1650,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.browser</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:422</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:430</li>
                 </ul>
               </aside>
             </section>
@@ -1660,7 +1680,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.crlf</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:656</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:664</li>
                 </ul>
               </aside>
             </section>
@@ -1695,7 +1715,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.customLevels</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:357</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:363</li>
                 </ul>
               </aside>
             </section>
@@ -1729,7 +1749,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.depthLimit</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:641</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:649</li>
                 </ul>
               </aside>
             </section>
@@ -1793,7 +1813,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.edgeLimit</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:646</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:654</li>
                 </ul>
               </aside>
             </section>
@@ -1823,7 +1843,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.enabled</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:418</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:426</li>
                 </ul>
               </aside>
             </section>
@@ -1856,7 +1876,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.errorKey</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:410</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:418</li>
                 </ul>
               </aside>
             </section>
@@ -2184,7 +2204,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.formatters</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:596</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:604</li>
                 </ul>
               </aside>
             </section>
@@ -2213,6 +2233,8 @@
                 ><span class="tsd-signature-type">Logger</span
                 ><span class="tsd-signature-symbol">&lt;</span
                 ><span class="tsd-signature-type">never</span
+                ><span class="tsd-signature-symbol">, </span
+                ><span class="tsd-signature-type">boolean</span
                 ><span class="tsd-signature-symbol">&gt;</span>,
                 <span class="tsd-kind-parameter">args</span
                 ><span class="tsd-signature-symbol">: </span
@@ -2264,6 +2286,8 @@
                       ><span class="tsd-signature-type">Logger</span
                       ><span class="tsd-signature-symbol">&lt;</span
                       ><span class="tsd-signature-type">never</span
+                      ><span class="tsd-signature-symbol">, </span
+                      ><span class="tsd-signature-type">boolean</span
                       ><span class="tsd-signature-symbol">&gt;</span>,
                       <span class="tsd-kind-parameter">args</span
                       ><span class="tsd-signature-symbol">: </span
@@ -2331,6 +2355,9 @@
                                       >&lt;</span
                                     ><span class="tsd-signature-type"
                                       >never</span
+                                    ><span class="tsd-signature-symbol">, </span
+                                    ><span class="tsd-signature-type"
+                                      >boolean</span
                                     ><span class="tsd-signature-symbol"
                                       >&gt;</span
                                     ></span
@@ -2394,7 +2421,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.hooks</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:628</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:636</li>
                 </ul>
               </aside>
             </section>
@@ -2429,7 +2456,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.level</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:351</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:357</li>
                 </ul>
               </aside>
             </section>
@@ -2479,7 +2506,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.levelComparison</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:363</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:377</li>
                 </ul>
               </aside>
             </section>
@@ -2513,7 +2540,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.levelVal</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:402</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:410</li>
                 </ul>
               </aside>
             </section>
@@ -2576,7 +2603,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.messageKey</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:406</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:414</li>
                 </ul>
               </aside>
             </section>
@@ -2611,7 +2638,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.mixin</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:376</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:384</li>
                 </ul>
               </aside>
             </section>
@@ -2650,7 +2677,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.mixinMergeStrategy</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:384</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:392</li>
                 </ul>
               </aside>
             </section>
@@ -2684,7 +2711,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.msgPrefix</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:622</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:630</li>
                 </ul>
               </aside>
             </section>
@@ -2711,7 +2738,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.name</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:333</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:339</li>
                 </ul>
               </aside>
             </section>
@@ -2742,7 +2769,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.nestedKey</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:414</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:422</li>
                 </ul>
               </aside>
             </section>
@@ -2775,7 +2802,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.onChild</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:651</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:659</li>
                 </ul>
               </aside>
             </section>
@@ -2820,7 +2847,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.redact</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:397</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:405</li>
                 </ul>
               </aside>
             </section>
@@ -2850,7 +2877,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.safe</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:329</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:335</li>
                 </ul>
               </aside>
             </section>
@@ -2896,7 +2923,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.serializers</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:339</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:345</li>
                 </ul>
               </aside>
             </section>
@@ -2937,7 +2964,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.timestamp</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:346</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:352</li>
                 </ul>
               </aside>
             </section>
@@ -2991,7 +3018,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.transport</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:325</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:331</li>
                 </ul>
               </aside>
             </section>
@@ -3030,7 +3057,7 @@
               <aside class="tsd-sources">
                 <p>Inherited from PinoLoggerOptions.useOnlyCustomLevels</p>
                 <ul>
-                  <li>Defined in node_modules/pino/pino.d.ts:369</li>
+                  <li>Defined in node_modules/pino/pino.d.ts:370</li>
                 </ul>
               </aside>
             </section>
