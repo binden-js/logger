@@ -24,7 +24,7 @@ export class Logger {
   public constructor({ logger, destination, ...options }: LoggerOptions = {}) {
     this.#logger = destination
       ? pino({ level: Logger.getLevel(), serializers, ...options }, destination)
-      : logger ?? pino({ level: Logger.getLevel(), serializers, ...options });
+      : (logger ?? pino({ level: Logger.getLevel(), serializers, ...options }));
   }
 
   public child(params: Bindings = {}): Logger {
